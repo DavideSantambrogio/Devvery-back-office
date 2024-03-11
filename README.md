@@ -1,3 +1,4 @@
+Progetto svolto in collaborazione ad altre quattro studenti durante il mio percorso in boolean.
 Il backend di Devvery gestisce la logica di business, la gestione dei dati e la comunicazione con il frontend dell'applicazione. Utilizziamo il framework PHP Laravel per sviluppare il backend, sfruttando le sue potenti funzionalità per creare un'API robusta e scalabile.
 
 #### Implementazioni Backend e Tecnologie Utilizzate:
