@@ -1,66 +1,46 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Il backend di Devvery gestisce la logica di business, la gestione dei dati e la comunicazione con il frontend dell'applicazione. Utilizziamo il framework PHP Laravel per sviluppare il backend, sfruttando le sue potenti funzionalità per creare un'API robusta e scalabile.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+#### Implementazioni Backend e Tecnologie Utilizzate:
 
-## About Laravel
+- **Laravel Framework:** Abbiamo scelto Laravel come framework principale per lo sviluppo del backend di Devvery. Laravel fornisce un'architettura chiara e ben strutturata, insieme a numerose funzionalità che semplificano lo sviluppo di applicazioni web complesse. Utilizziamo le funzionalità di routing, autenticazione, gestione delle richieste HTTP e molto altro fornite da Laravel.
+<br>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Gestione dei Dati:** MySQL è stato utilizzato per memorizzare e gestire tutti i dati relativi agli utenti, ai ristoranti, ai piatti disponibili, agli ordini e alle transazioni di pagamento. Abbiamo progettato il database utilizzando MySQL Workbench o strumenti simili per definire lo schema dei dati, le tabelle e le relazioni tra di esse.
+<br>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **API RESTful:** Sviluppiamo un'API RESTful per consentire al frontend di comunicare con il backend in modo efficiente. Utilizziamo le risorse di Laravel per definire le rotte API e gestire le richieste HTTP in entrata e in uscita.
+<br>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Gestione degli Utenti e dell'Autenticazione:** Utilizziamo il sistema di autenticazione integrato di Laravel per gestire l'autenticazione degli utenti. Consentiamo agli utenti di registrarsi, effettuare il login e gestire il proprio account utilizzando le funzionalità fornite da Laravel, come le migrazioni e i seeders per la gestione del database degli utenti.
+<br>
 
-## Learning Laravel
+- **Integrazione con Braintree per il Sistema di Pagamento:** Integriamo il servizio di pagamento Braintree nel backend utilizzando la libreria ufficiale fornita da Laravel. Configuriamo le credenziali di accesso e utilizziamo le API di Braintree per elaborare le transazioni di pagamento in modo sicuro e affidabile.
+<br>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Gestione delle Richieste HTTP:** Utilizziamo il middleware di Laravel per gestire le richieste HTTP in entrata e in uscita. Implementiamo controllori per gestire le diverse operazioni richieste dal frontend, come la gestione degli ordini, la ricerca dei ristoranti e la gestione dei piatti disponibili.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Complessivamente, utilizzando il framework Laravel per lo sviluppo del backend, garantiamo un'architettura solida e ben strutturata per Devvery. Integrando le funzionalità di autenticazione, gestione dei dati e comunicazione con Braintree per il sistema di pagamento, forniamo un backend robusto e scalabile per supportare le funzionalità complesse dell'applicazione Devvery.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Pagina Login
 
-## Laravel Sponsors
+<img src="screen/127.0.0.1_8000_login.png" alt="">
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Pagina Iniziale
 
-### Premium Partners
+<img src="screen/Screenshot 2024-03-11 130759.png" alt="">
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+### Piatti del ristorante
 
-## Contributing
+<img src="screen/Screenshot 2024-03-11 130842.png" alt="">
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Ordini ricevuti
 
-## Code of Conduct
+<img src="screen/Screenshot 2024-03-11 130934.png" alt="">
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Ordini Evasi
 
-## Security Vulnerabilities
+<img src="screen/Screenshot 2024-03-11 131033.png" alt="">
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Statistiche
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<img src="screen/Screenshot 2024-03-11 131122.png" alt="">
