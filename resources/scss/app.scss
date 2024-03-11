@@ -1,0 +1,565 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./variables/variables";
+
+// GENERAL
+
+img {
+  max-width: 100%;
+}
+
+.ms_bg-yellow {
+  background-color: $ms_yellow;
+}
+
+.ms_bg-orange {
+  background-color: $ms_orange;
+}
+
+.ms_bg-silver {
+  background-color: $ms_silver;
+}
+
+.ms_bg-bronze {
+  background-color: $ms_bronze;
+}
+
+.ms_bg-dark {
+  background-color: $ms_dark;
+}
+
+.ms_color-yellow {
+  color: $ms_yellow;
+}
+
+.ms_color-dark {
+  color: $ms_dark;
+}
+
+.ms_color-red {
+  color: $ms_red;
+}
+
+
+.ms_btn-red {
+  background-color: $ms_red;
+  color: white;
+  padding: .2rem .5rem .2rem .5rem;
+  font-weight: bolder;
+  border-radius: 5px;
+  border: 2px solid $ms_red;
+
+  &:hover {
+    border: 2px solid $ms_red;
+    color: $ms_red;
+    background-color: transparent;
+  }
+}
+
+.ms_btn-yellow {
+  background-color: $ms_yellow;
+  color: white;
+  padding: .2rem .5rem .2rem .5rem;
+  font-weight: bolder;
+  border-radius: 5px;
+  border: 2px solid $ms_yellow;
+
+  &:hover {
+    border: 2px solid $ms_yellow;
+    color: $ms_yellow;
+    background-color: transparent;
+  }
+}
+
+.ms_btn-green {
+  background-color: $ms_green;
+  padding: .2rem .5rem .2rem .5rem;
+  color: white;
+  font-weight: bolder;
+  border-radius: 5px;
+  border: 2px solid $ms_green;
+}
+
+.ms_btn-dark {
+  background-color: $ms_dark;
+  color: white;
+  padding: .2rem .5rem .2rem .5rem;
+  font-weight: bolder;
+  border-radius: 5px;
+  border: 2px solid $ms_dark;
+
+  &:hover {
+    border: 2px solid $ms_dark;
+    color: $ms_dark;
+    background-color: transparent;
+  }
+}
+
+.ms_btn {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: .3rem .6rem .3rem .6rem;
+}
+
+.ms_badge-dark {
+  background-color: $ms_dark;
+  color: white;
+  border-radius: 5px;
+  padding: .2rem .5rem .2rem .5rem;
+  font-weight: bold;
+}
+
+.ms_bg-vertical {
+  background: rgb(3, 28, 32);
+  background: linear-gradient(283deg, rgba(4, 54, 63, 1) 54%, rgba(3, 28, 32, 1) 54%);
+}
+
+.ms_bg-horizontal {
+  background: rgb(3, 28, 32);
+  background: linear-gradient(186deg, rgba(4, 54, 63, 1) 54%, rgba(3, 28, 32, 1) 54%);
+}
+
+
+
+// CUSTOM
+.not-found-page {
+  height: calc(100vh - 200px);
+
+  main {
+    width: 100%;
+    padding: 0 !important;
+  }
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  height: calc(100vh - 50px);
+  overflow: auto;
+  background-image: url(../img/background.png);
+  background-repeat: repeat;
+  background-size: 1080px 981px;
+  padding: 2.5rem 2rem 6rem 2rem !important;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.user_dropdown {
+  background-color: $ms_dark;
+  border-radius: 5px;
+  color: white;
+
+  button {
+    background-color: $ms_dark;
+    color: white;
+  }
+
+  li:hover {
+    a {
+      background-color: rgba(103, 100, 100, 0.485);
+    }
+  }
+}
+
+.navbar-toggler {
+  --bs-navbar-toggler-border-color: none;
+  color: transparent;
+
+}
+
+.ms_hamburger {
+  width: 20%;
+
+  &:hover {
+    filter: contrast(50%);
+  }
+}
+
+.navbar-brand {
+  width: 40%;
+  min-width: 150px;
+}
+
+nav {
+  i {
+    font-size: 2rem !important;
+  }
+}
+
+.card-body {
+  background-color: rgba(253, 182, 51, 0.10);
+}
+
+.card-header {
+  background-color: rgba(253, 182, 51, 0.25);
+}
+
+.modal-header {
+  background-color: rgba(253, 182, 51, 0.25);
+}
+
+.modal-body {
+  background-color: rgba(253, 182, 51, 0.10);
+}
+
+.modal-footer {
+  background-color: rgba(253, 182, 51, 0.10);
+}
+
+td {
+  background-color: #fff8ec !important;
+}
+
+tr,
+th {
+  background-color: #ffecd0 !important;
+}
+
+label {
+  font-weight: bold;
+}
+
+.hover-zoom {
+  transition: all .3s ease-in-out;
+  z-index: 1;
+
+  &:hover {
+    z-index: 2;
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+  }
+}
+
+.pagination {
+  flex-wrap: wrap !important;
+
+  .page-item {
+    margin: 1rem 0 1rem 0;
+  }
+}
+
+td.d-none,
+th.d-none {
+  @media screen and (min-width: 766px) {
+    display: table-cell !important;
+  }
+}
+
+
+// CHECKBOX RESTAURANT
+
+.checkbox-wrapper-10 .tgl {
+  display: none;
+}
+
+.checkbox-wrapper-10 .tgl+.tgl-btn {
+  box-sizing: border-box;
+}
+
+.checkbox-wrapper-10 .tgl+.tgl-btn::selection {
+  background: none;
+}
+
+.checkbox-wrapper-10 .tgl+.tgl-btn {
+  outline: 0;
+  display: block;
+  width: 120px;
+  height: 2em;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox-wrapper-10 .tgl+.tgl-btn:after,
+.checkbox-wrapper-10 .tgl+.tgl-btn:before {
+  position: relative;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+.checkbox-wrapper-10 .tgl+.tgl-btn:after {
+  left: 0;
+}
+
+.checkbox-wrapper-10 .tgl+.tgl-btn:before {
+  display: none;
+}
+
+.checkbox-wrapper-10 .tgl:checked+.tgl-btn:after {
+  left: 50%;
+}
+
+.checkbox-wrapper-10 .tgl-flip+.tgl-btn {
+  padding: 2px;
+  transition: all 0.2s ease;
+  font-family: sans-serif;
+  perspective: 100px;
+}
+
+.checkbox-wrapper-10 .tgl-flip+.tgl-btn:after,
+.checkbox-wrapper-10 .tgl-flip+.tgl-btn:before {
+  display: inline-block;
+  padding: 0 .5rem 0 .5rem;
+  transition: all 0.4s ease;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  line-height: 2em;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 4px;
+}
+
+.checkbox-wrapper-10 .tgl-flip+.tgl-btn:after {
+  content: attr(data-tg-on);
+  background: $ms_yellow;
+  transform: rotateY(-180deg);
+}
+
+.checkbox-wrapper-10 .tgl-flip+.tgl-btn:before {
+  background: $ms_dark;
+  content: attr(data-tg-off);
+}
+
+.checkbox-wrapper-10 .tgl-flip+.tgl-btn:active:before {
+  transform: rotateY(-20deg);
+}
+
+.checkbox-wrapper-10 .tgl-flip:checked+.tgl-btn:before {
+  transform: rotateY(180deg);
+}
+
+.checkbox-wrapper-10 .tgl-flip:checked+.tgl-btn:after {
+  transform: rotateY(0);
+  left: 0;
+  background: $ms_yellow;
+}
+
+.checkbox-wrapper-10 .tgl-flip:checked+.tgl-btn:active:after {
+  transform: rotateY(20deg);
+}
+
+
+
+// AVAIABLE TOGGLE
+
+.toggler-wrapper {
+  display: block;
+  width: 45px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+}
+
+.toggler-wrapper input[type="checkbox"] {
+  display: none;
+}
+
+.toggler-wrapper input[type="checkbox"]:checked+.toggler-slider {
+  background-color: $ms_dark;
+}
+
+.toggler-wrapper .toggler-slider {
+  background-color: #ccc;
+  position: absolute;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.toggler-wrapper .toggler-knob {
+  position: absolute;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.toggler-wrapper.style-1 input[type="checkbox"]:checked+.toggler-slider .toggler-knob {
+  left: calc(100% - 19px - 3px);
+}
+
+.toggler-wrapper.style-1 .toggler-knob {
+  width: calc(25px - 6px);
+  height: calc(25px - 6px);
+  border-radius: 50%;
+  left: 3px;
+  top: 3px;
+  background-color: #fff;
+}
+
+// CHECKBOX FOODS
+
+.checkbox-wrapper-8 .tgl {
+  display: none;
+}
+
+.checkbox-wrapper-8 .tgl+.tgl-btn {
+  box-sizing: border-box;
+}
+
+.checkbox-wrapper-8 .tgl+.tgl-btn::selection {
+  background: none;
+}
+
+.checkbox-wrapper-8 .tgl+.tgl-btn {
+  outline: 0;
+  display: block;
+  width: 4em;
+  height: 2em;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox-wrapper-8 .tgl+.tgl-btn:after,
+.checkbox-wrapper-8 .tgl+.tgl-btn:before {
+  position: relative;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+}
+
+.checkbox-wrapper-8 .tgl+.tgl-btn:after {
+  left: 0;
+}
+
+.checkbox-wrapper-8 .tgl+.tgl-btn:before {
+  display: none;
+}
+
+.checkbox-wrapper-8 .tgl:checked+.tgl-btn:after {
+  left: 50%;
+}
+
+.checkbox-wrapper-8 .tgl-skewed+.tgl-btn {
+  overflow: hidden;
+  transform: skew(-10deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: all 0.2s ease;
+  font-family: sans-serif;
+  background: #a9a9a9;
+}
+
+.checkbox-wrapper-8 .tgl-skewed+.tgl-btn:after,
+.checkbox-wrapper-8 .tgl-skewed+.tgl-btn:before {
+  transform: skew(10deg);
+  display: inline-block;
+  transition: all 0.2s ease;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  line-height: 2em;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.checkbox-wrapper-8 .tgl-skewed+.tgl-btn:after {
+  left: 100%;
+  content: attr(data-tg-on);
+}
+
+.checkbox-wrapper-8 .tgl-skewed+.tgl-btn:before {
+  left: 0;
+  content: attr(data-tg-off);
+}
+
+.checkbox-wrapper-8 .tgl-skewed+.tgl-btn:active {
+  background: #d5d5d5;
+}
+
+.checkbox-wrapper-8 .tgl-skewed+.tgl-btn:active:before {
+  left: -10%;
+}
+
+.checkbox-wrapper-8 .tgl-skewed:checked+.tgl-btn {
+  background: #1967d2;
+}
+
+.checkbox-wrapper-8 .tgl-skewed:checked+.tgl-btn:before {
+  left: -100%;
+}
+
+.checkbox-wrapper-8 .tgl-skewed:checked+.tgl-btn:after {
+  left: 0;
+}
+
+.checkbox-wrapper-8 .tgl-skewed:checked+.tgl-btn:active:after {
+  left: 10%;
+}
+
+// BOOTSTRAP PAGINATION
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: .5rem .75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: white !important;
+  background-color: $ms_dark !important;
+  border: 1px solid $ms_dark !important;
+}
+
+.page-link:hover {
+  z-index: 2;
+  color: #fff !important;
+  text-decoration: none;
+  background-color: #a4a4a4 !important;
+  border-color: #dee2e6;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: black !important;
+  background-color: $ms_yellow !important;
+  border-color: #353535;
+}
+
+// BUTTON IN FOODS CARD
+.ms_width_icon {
+  width: 35px;
+  border: 2px solid $ms_yellow;
+  background-color: white;
+  color: $ms_dark;
+
+  &:hover {
+    color: $ms_yellow;
+    border: 2px solid white;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1300px) {
+  .ms_query_for_button {
+    flex-direction: row;
+    gap: 1;
+  }
+
+  .ms_width_icon {
+    font-size: small;
+    height: 20px;
+    line-height: 10px;
+  }
+}
