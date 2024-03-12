@@ -8,7 +8,7 @@ Il backend di Devvery gestisce la logica di business, la gestione dei dati e la 
 
 
 - **Gestione dei Dati:** MySQL è stato utilizzato per memorizzare e gestire tutti i dati relativi agli utenti, ai ristoranti, ai piatti disponibili, agli ordini e alle transazioni di pagamento. Abbiamo progettato il database utilizzando MySQL Workbench o strumenti simili per definire lo schema dei dati, le tabelle e le relazioni tra di esse.
-
+ 
 
 - **API:** Sviluppiamo un'API RESTful per consentire al frontend di comunicare con il backend in modo efficiente. Utilizziamo le risorse di Laravel per definire le rotte API e gestire le richieste HTTP in entrata e in uscita.
 
