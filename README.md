@@ -23,7 +23,12 @@ Il backend di Devvery gestisce la logica di business, la gestione dei dati e la 
 
 Complessivamente, utilizzando il framework Laravel per lo sviluppo del backend, garantiamo un'architettura solida e ben strutturata per Devvery. Integrando le funzionalità di autenticazione, gestione dei dati e comunicazione con Braintree per il sistema di pagamento, forniamo un backend robusto e scalabile per supportare le funzionalità complesse dell'applicazione Devvery.
 
-### Pagina Login
+### Video
+
+https://github.com/DavideSantambrogio/Devvery-back-office/assets/144235842/e5a549a3-7365-48d0-b707-f1863232817d
+
+
+<!-- ### Pagina Login
 
 <img src="screen/127.0.0.1_8000_login.png" alt="">
 
@@ -45,4 +50,4 @@ Complessivamente, utilizzando il framework Laravel per lo sviluppo del backend, 
 
 ### Statistiche
 
-<img src="screen/Screenshot 2024-03-11 131122.png" alt="">
+<img src="screen/Screenshot 2024-03-11 131122.png" alt=""> -->
